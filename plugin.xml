@@ -1,0 +1,93 @@
+<plugin name='studio' version='0.1-SNAPSHOT' grailsVersion='2.1 &gt; *'>
+  <author>Stefan Nowaczynski</author>
+  <authorEmail>stefan@stefan-nowaczynski.com</authorEmail>
+  <title>Studio</title>
+  <description>Shop Backend
+</description>
+  <documentation>http://grails.org/plugin/studio</documentation>
+  <type>StudioGrailsPlugin</type>
+  <resources>
+    <resource>ApplicationResources</resource>
+    <resource>BootStrap</resource>
+    <resource>spring.resources</resource>
+    <resource>LoginController</resource>
+    <resource>LogoutController</resource>
+    <resource>RequestmapController</resource>
+    <resource>SecureController</resource>
+    <resource>de.nextcommerce.core.CategoryController</resource>
+    <resource>de.nextcommerce.core.ConfiguratorController</resource>
+    <resource>de.nextcommerce.core.CustomerFieldsTemplateController</resource>
+    <resource>de.nextcommerce.core.DashboardController</resource>
+    <resource>de.nextcommerce.core.FieldWizardController</resource>
+    <resource>de.nextcommerce.core.FieldsController</resource>
+    <resource>de.nextcommerce.core.ProductController</resource>
+    <resource>de.nextcommerce.core.SchemeController</resource>
+    <resource>de.nextcommerce.core.ScreensController</resource>
+    <resource>de.nextcommerce.core.SearchableController</resource>
+    <resource>de.nextcommerce.core.secure.PersistentLoginController</resource>
+    <resource>de.nextcommerce.core.secure.RegisterController</resource>
+    <resource>de.nextcommerce.core.secure.RegistrationCodeController</resource>
+    <resource>de.nextcommerce.core.secure.RequestmapController</resource>
+    <resource>de.nextcommerce.core.secure.RoleController</resource>
+    <resource>de.nextcommerce.core.secure.SecurityInfoController</resource>
+    <resource>de.nextcommerce.core.secure.UserController</resource>
+    <resource>de.nextcommerce.core.Category</resource>
+    <resource>de.nextcommerce.core.Configurator</resource>
+    <resource>de.nextcommerce.core.CustomerFieldsTemplate</resource>
+    <resource>de.nextcommerce.core.Dashboard</resource>
+    <resource>de.nextcommerce.core.Fields</resource>
+    <resource>de.nextcommerce.core.ItemProperties</resource>
+    <resource>de.nextcommerce.core.Items</resource>
+    <resource>de.nextcommerce.core.Product</resource>
+    <resource>de.nextcommerce.core.Scheme</resource>
+    <resource>de.nextcommerce.core.Screens</resource>
+    <resource>de.nextcommerce.core.secure.Authority</resource>
+    <resource>de.nextcommerce.core.secure.PersistentLogin</resource>
+    <resource>de.nextcommerce.core.secure.PersonAuthority</resource>
+    <resource>de.nextcommerce.core.secure.Requestmap</resource>
+    <resource>de.nextcommerce.core.secure.User</resource>
+    <resource>de.nextcommerce.core.command.CustomerFieldsCommand</resource>
+    <resource>de.nextcommerce.core.utils.ResultSetWrapper</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='http://snapshots.repository.codehaus.org' url='http://snapshots.repository.codehaus.org/' />
+    <repository name='http://repository.codehaus.org' url='http://repository.codehaus.org/' />
+    <repository name='http://download.java.net/maven/2/' url='http://download.java.net/maven/2/' />
+    <repository name='http://repository.jboss.com/maven2/' url='http://repository.jboss.com/maven2/' />
+  </repositories>
+  <dependencies>
+    <compile>
+      <dependency group='org.grails' name='grails-webflow' version='2.1.1' />
+    </compile>
+    <runtime>
+      <dependency group='mysql' name='mysql-connector-java' version='5.1.20' />
+    </runtime>
+  </dependencies>
+  <plugins>
+    <compile>
+      <plugin group='org.grails.plugins' name='famfamfam' version='1.0.1' />
+      <plugin group='org.grails.plugins' name='spring-security-core' version='1.2.7.3' />
+      <plugin group='org.grails.plugins' name='ckeditor' version='3.6.2.2' />
+      <plugin group='org.grails.plugins' name='cache' version='1.0.0' />
+      <plugin group='org.grails.plugins' name='webflow' version='2.0.0' />
+      <plugin group='org.grails.plugins' name='jquery-ui' version='1.8.24' />
+      <plugin group='org.grails.plugins' name='mail' version='1.0.1' />
+    </compile>
+    <runtime>
+      <plugin group='org.grails.plugins' name='spring-security-ui' version='0.2' />
+      <plugin group='org.grails.plugins' name='fields' version='1.0.1' />
+      <plugin group='org.grails.plugins' name='hibernate' version='2.1.1' />
+      <plugin group='org.grails.plugins' name='resources' version='1.1.6' />
+      <plugin group='org.grails.plugins' name='jquery' version='1.8.0' />
+      <plugin group='org.grails.plugins' name='database-migration' version='1.1' />
+    </runtime>
+    <build>
+      <plugin group='org.grails.plugins' name='tomcat' version='2.1.1' />
+    </build>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
